@@ -2,9 +2,9 @@ import random
 
 num = random.randint(1,9)
 chances = 0
-while chances>5:
+while chances<5:
     guess = int(input('enter guess\n'))
-    if guess>9 or guess<1:
+    if (guess>9 or guess<1):
         print('guess outside limit')
     else:
         chances+=1
